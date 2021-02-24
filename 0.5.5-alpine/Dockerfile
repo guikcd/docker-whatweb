@@ -2,7 +2,7 @@ FROM ruby:2.7-alpine AS builder
 
 ENV WHATWEB_VERSION v0.5.5
 
-RUN apk update && apk add git make gcc musl-dev
+RUN apk --no-cache add git make gcc musl-dev
 RUN git clone --branch $WHATWEB_VERSION https://github.com/urbanadventurer/WhatWeb.git /src/whatweb
 
 # https://github.com/urbanadventurer/WhatWeb/wiki/Installation
