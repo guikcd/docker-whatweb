@@ -8,8 +8,8 @@ jobs:
       uses: actions/checkout@master
 
     - name: lint
-      uses: luke142367/Docker-Lint-Action@v1.0.1
+      uses: luke142367/Docker-Lint-Action@v1.1.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        target: Dockerfile 0.4.9/Dockerfile 0.5.1/Dockerfile
+        target: Dockerfile 0.4.9/Dockerfile 0.5.1/Dockerfile 0.5.2/Dockerfile 0.5.5/Dockerfile
